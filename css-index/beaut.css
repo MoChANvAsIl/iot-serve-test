@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(43, 43, 54, 1);
+    color: white;
+    font-family: Inter;
+}
+
+.container {
+    max-width: 1414px;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+/*--------------HEADER-BLOCK-------------------*/
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    font-size: 24px;
+}
+
+.menu {
+    margin: 0px 120px;
+    display: flex;
+}
+.menu_item {
+    margin: auto 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.menu_item.active {
+    color: rgba(139, 84, 255, 1);
+    border-bottom: 1.5px solid rgba(139, 84, 255, 1);
+    padding: 0 0 4px;
+}
+.header_button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 25px;
+    background-color: rgba(139, 84, 255, 1);
+    text-transform: uppercase;
+    border: 4px solid rgba(156, 166, 255, 1);
+}
+.header_button p {
+    margin: auto;
+}
+.header_button img {
+    margin: 0px 10px;
+    width: 15px;
+    height: 24px;
+}
+/*-----------MAIN-BLOCK---------------------------------------*/
+.main_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_block_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 28px auto 36px;
+}
+.title {
+    font-weight: 600;
+    font-size: 48px;
+}
+.content {
+    margin: 28px auto;
+    text-align: center;
+    width: 569px;
+}
+.buttons {
+    margin: 36px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.demo_button {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 11px 44px;
+    color: white;
+    background-color: #8B54FF;
+    border: #9CA6FF solid 1px;
+    margin: auto 60px;
+}
+.learn_more_button {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform:capitalize;
+    padding: 11px 44px;
+    color: white;
+    border: 1px solid #9CA6FF2B;
+    margin: auto 40px;
+    background-color: inherit;
+}
+.main_block_image {
+    border-radius: 33px;
+    width: 741px;
+}
+
+/*------------SECOND-BLOCK---------------------------------------*/
+.firstBlock {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 166px auto 100px;
+}
+
+.firstLine {
+    display: flex;
+    justify-content: space-around;
+}
+.line_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line_item_image {
+    width: 46px;
+}
+.lineItemText {
+    font-weight: 500;
+    text-align: center;
+}
+.line_item_text_title {
+    padding: 18px;
+}
+.line_item_text_contant {
+    color: #626262;
+}
+
+.secondLine {
+    display: flex;
+}
+.secondLine .line_item {
+    margin: 100px 0px;
+}
+.secondLine .line_item:first-child {
+    margin: auto 170px auto 200px;
+}
+
+/*-------------INFOBLOCK-------------------------------------*/
+.infoBlock {
+}
+.infoBlock_1 {
+    display: flex;
+    justify-content: space-around;
+}
+.infoBlock_text {
+    text-align: center;
+    width: 300px;
+    font-size: 14px;
+}
+.infoBlock_title {
+    margin: 23px;
+}
+.infoBlock_content {
+    color: #626262;
+}
+.infoBlock_image {
+    background-color: #21222D;
+    padding: 20px;
+}
+.infoBlock_image_ {
+}
+
+.infoBlock_2 {
+    display: flex;
+    margin: 140px 0px;
+    justify-content: space-around;
+}
+
+
+/*--------------FOOTER------------------*/
+footer {
+    background-color: #21222D;
+    padding: 50px 0 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerTitle {
+    font-size: 18px;
+    font-weight: 600;
+}
+.footerInfoBlock {
+    display: flex;
+
+}
+.footer_info_col {
+    padding-left: 70px;
+}
+.footer_info_col_title {
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+.footer_info_col_menu {
+
+}
+.footer_info_col_item {
+    font-size: 12px;
+    font-weight: 600px;
+    color: #848484;
+    margin: 12px 0px;
+}

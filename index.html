@@ -1,585 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VasilProject</title>
-    <!-- css -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/media.css">
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <!-- icon -->
-    <script src="https://kit.fontawesome.com/31d6edc057.js" crossorigin="anonymous"></script>
-    <!-- js -->
-    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <link rel="stylesheet" href="/css-index/beaut.css">
+    <title>Register</title>
 </head>
+
 <body>
-    <section id="main-info">
-        <div class="container">
-            <div class="main-block">
-                <div class="first-add-block">
-                    <header>
-                        <div class="dashboard-block">
-                            <div class="dashboard">
-                                <a href="/index.html">
-                                    <div>
-                                        <img src="img/left-block/dashboard.svg" class="dashboard-img" alt="#">
-                                    </div>
-                                    <div>
-                                        <p>
-                                            Dashboard
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="profile-block">
-                            <div class="profile">
-                                <a href="#">
-                                    <div>
-                                        <img src="/img/left-block/user.svg" alt="#">
-                                    </div>
-                                    <div>
-                                        <p>
-                                            <a href="/profile.html">
-                                                Profile
-                                            </a>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="statistics-block">
-                            <div class="statistics">
-                                <a href="#">
-                                    <div>
-                                        <img src="/img/left-block/statistics.svg" alt="#">
-                                    </div>
-                                    <div>
-                                        <p>
-                                            <a href="/statistics.html">
-                                                Statistics
-                                            </a>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="message-block">
-                            <div class="message">
-                                <a href="#">
-                                    <div>
-                                        <img src="/img/left-block/message.svg" alt="#">
-                                    </div>
-                                    <div>
-                                        <p>
-                                            <a href="#">
-                                                Message
-                                            </a>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="settings-block">
-                            <div class="settings">
-                                <a href="#">
-                                    <div>
-                                        <img src="/img/left-block/settings.svg" alt="#">
-                                    </div>
-                                    <div>
-                                        <p>
-                                            <a href="#">
-                                                Settings
-                                            </a>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="devices-block">
-                            <div class="devices">
-                                <a href="#">
-                                    <div>
-                                        <i class="fa-solid fa-clock-rotate-left --fa-inverse"></i>
-                                    </div>
-                                    <div>
-                                        <p>
-                                            <a href="/devices.html" class="a-devices">
-                                                Devices
-                                            </a>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="signout-block">
-                            <div class="signout">
-                                <a href="#">
-                                    <div>
-                                        <img src="/img/left-block/signout.svg" alt="">
-                                    </div>
-                                    <div>
-                                        <p>
-                                            <a href="#">
-                                                Signout
-                                            </a>
-                                        </p>
-                                    </div>
-                                </a>
-                           </div>
-                        </div>
-                    </header>
+    <div class="container">
+        <header>
+            <div class="logo">IoT Serve</div>
+            <div class="menu">
+                <div class="menu_item active">home</div>
+                <div class="menu_item">about</div>
+                <div class="menu_item"><a href="dashboard.html">samples</a></div>
+                <div class="menu_item">contacts</div>
+            </div>
+            <div class="header_button button">
+                <p>sing up</p>
+                <img src="./img/Index/sing.png" alt="#" class="button_image">
+            </div>
+        </header>
+        <div class="main_block">
+            <div class="main_block_text">
+                <div class="title">Make your IoT device fast!</div>
+                <div class="content">Lorem ipsum — класичний варіант умовного беззмістовного тексту, що вставляється в
+                    макет сторінки. Lorem ipsum — це перекручений уривок з філософського трактату Цицерона «Про межі
+                    добра і зла», написаного в 45 році до нашої ери латиною.</div>
+                <div class="buttons">
+                    <button class="demo_button">demo</button>
+                    <button class="learn_more_button">learn more</button>
                 </div>
-                <div class="sec-add-block">
-                    <div class="header">
-                        <div class="block-search">
-                            <div class="icon-search">
-                                <img src="/img/search-block/Search.svg" alt="#">
-                            </div>
-                            <div class="block-input">
-                                <input type="text" placeholder="Search here...">
-                            </div>
-                        </div>
-                        <div class="block-acc">
-                            <div>
-                                <a href="#">
-                                    <img src="/img/search-block/Bell.svg" alt="#">
-                                </a>
-                            </div>
-                            <div class="face">
-                                <a href="#">
-                                    <img src="/img/search-block/Face.svg" alt="#">
-                                </a>
-                            </div>
-                            <div class="check">
-                                <a href="#">
-                                    <img src="/img/search-block/Check.svg" alt="#">
-                                </a>
-                            </div>
-                        </div>
+            </div>
+            <img src="./img/Index/image 1.png" alt="" class="main_block_image">
+        </div>
+        <div class="firstBlock">
+            <div class="firstLine">
+                <div class="line_item">
+                    <img src="./img/Index/Date_range_fill.png" alt="" class="line_item_image">
+                    <div class="lineItemText">
+                        <div class="line_item_text_title">Time Automation</div>
+                        <div class="line_item_text_contant">Here you can automate your iot<br> device by time and date
+                            without<br> any problem</div>
                     </div>
-                    <div class="main-info-block">
-                        <div class="main-info-site1">
-                            <div class="currently-up">
-                                <div class="block-title-c-up">
-                                    <p class="title-c-up">
-                                        Currently update’s
-                                    </p>
-                                    <p class="name-c-up">
-                                        Summary:
-                                    </p>
-                                </div>
-                                <div class="main-block-info-c-up">
-                                    <div class="block-info-c-up1">
-                                        <div>
-                                            <img src="/img/Dashboard/GSM.svg" alt="#">
-                                        </div>
-                                        <div>
-                                            <p class="name-set-c-up">
-                                                GSM
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p class="set-c-up">
-                                                Signal quality
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p class="proc-set">
-                                                +1% from yesterday
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="block-info-c-up2">
-                                        <div>
-                                            <img src="/img/Dashboard/Power.svg" alt="#">
-                                        </div>
-                                        <div>
-                                            <p class="name-set-c-up">
-                                                44.3V
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p class="set-c-up2">
-                                                Total Power 30W
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p class="proc-set2">
-                                                +8% from yesterday
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="block-info-c-up3">
-                                        <div>
-                                            <img src="/img/Dashboard/Electricity-Sold.svg" alt="#">
-                                        </div>
-                                        <div>
-                                            <p class="name-set-c-up">
-                                                90W
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p class="set-c-up2">
-                                                Electricity Sold
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p class="proc-set3">
-                                                +2% from yesterday
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="block-info-c-up4">
-                                        <div>
-                                            <img src="/img/Dashboard/New-Users.svg" alt="">
-                                        </div>
-                                        <div>
-                                            <p class="name-set-c-up">
-                                                12
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p class="set-c-up2">
-                                                New Users
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p class="proc-set4">
-                                                +0% from yesterday
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="level-graph">
-                                <div class="block-level-graph">
-                                    <div class="title-level-graph">
-                                        <p>
-                                            Level
-                                        </p>
-                                    </div>
-                                    <div id="graphs-column" style="width: 300px; height: 200px;"></div>
-                                    <script>
-                                        document.addEventListener('DOMContentLoaded', () => {
-
-                                            Highcharts.chart('graphs-column', {
-
-                                                chart: {
-                                                    type: 'column',
-                                                    backgroundColor: '#21222D',
-                                                },
-                                                credits: {
-                                                    enabled: false,
-                                                },
-                                                title: {
-                                                    text: '',
-                                                },
-                                                colors: ['#A9DFD8', '#A9DFD8', '#A9DFD8', '#A9DFD8', '#A9DFD8', '#A9DFD8'],
-                                                yAxis: {
-                                                    title: {
-                                                        text: false,
-                                                    },
-                                                },
-                                                xAxis: {
-                                                    categories: ['', '', '', '', '', '',]
-                                                },
-                                                series: [{
-                                                    name: '',
-                                                    data: [110, 98, 90, 400, 300, 350,],
-
-                                                }],
-                                            });
-                                        });
-                                    </script>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main-info-site2">
-                            <div class="performance">
-                                <div class="title-performance">
-                                    <p>
-                                        Performance
-                                    </p>
-                                </div>
-                                <div class="info-performance">
-                                    <div class="progress-block-1">
-                                        <div class="progress-1-title-1">
-                                            <p>#</p>
-                                        </div>
-                                        <div class="progress-1-title-2">
-                                            <p>Name</p>
-                                        </div>
-                                        <div class="progress-1-title-3">
-                                            <p>Progress</p>
-                                        </div>
-                                        <div class="progress-1-title-4">
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                    <div class="progress-block-2">
-                                        <div class="progress-2-title-1">
-                                            <p>1</p>
-                                        </div>
-                                        <div class="progress-2-title-2">
-                                            <p>MCU load</p>
-                                        </div>
-                                        <div class="progress-2-title-3">
-                                            <div class="wrapper">
-                                                <div class="progress">
-                                                    <div class="progress__line-bg">
-                                                        <div class="progress__line" id="progress__line"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <script>
-                                                function Progress() {
-                                                    let elem = document.getElementById('progress__line'),
-                                                        width = 1,
-                                                        id = setInterval(progressStatus, 13);
-                                                    function progressStatus() {
-                                                        if (width >= 70) {
-                                                            clearInterval(id);
-                                                        } else {
-                                                            width++;
-                                                            elem.style.width = width + '%';
-                                                            elem.innerHTML = width * '0';
-                                                        }
-                                                    }
-                                                }
-                                                Progress();
-                                            </script>
-                                        </div>
-                                        <div class="progress-2-title-4">
-                                            <div class="block-background">
-                                                <p>
-                                                    46%
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="progress-block-3">
-                                        <div class="progress-3-title-1">
-                                            <p>
-                                                2
-                                            </p>
-                                        </div>
-                                        <div class="progress-3-title-2">
-                                            <p>
-                                                GSM signal quality
-                                            </p>
-                                        </div>
-                                        <div class="progress-3-title-3">
-                                            <div class="wrapper2">
-                                                <div class="progress">
-                                                    <div class="progress__line-bg2">
-                                                        <div class="progress__line2" id="progress__line2"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <script>
-                                                function Progress() {
-                                                    let elem = document.getElementById('progress__line2'),
-                                                        width = 1,
-                                                        id = setInterval(progressStatus, 13);
-                                                    function progressStatus() {
-                                                        if (width >= 60) {
-                                                            clearInterval(id);
-                                                        } else {
-                                                            width++;
-                                                            elem.style.width = width + '%';
-                                                            elem.innerHTML = width * '0';
-                                                        }
-                                                    }
-                                                }
-                                                Progress();
-                                            </script>
-                                        </div>
-                                        <div class="progress-3-title-4">
-                                            <div class="block-background2">
-                                                <p>
-                                                    17%
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="progress-block-4">
-                                        <div class="progress-4-title-1">
-                                            <p>
-                                                3
-                                            </p>
-                                        </div>
-                                        <div class="progress-4-title-2">
-                                            <p>
-                                                MPU Temp
-                                            </p>
-                                        </div>
-                                        <div class="progress-4-title-3">
-                                            <div class="wrapper3">
-                                                <div class="progress">
-                                                    <div class="progress__line-bg3">
-                                                        <div class="progress__line3" id="progress__line3"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <script>
-                                                function Progress() {
-                                                    let elem = document.getElementById('progress__line3'),
-                                                        width = 1,
-                                                        id = setInterval(progressStatus, 13);
-                                                    function progressStatus() {
-                                                        if (width >= 50) {
-                                                            clearInterval(id);
-                                                        } else {
-                                                            width++;
-                                                            elem.style.width = width + '%';
-                                                            elem.innerHTML = width * '0';
-                                                        }
-                                                    }
-                                                }
-                                                Progress();
-                                            </script>
-                                        </div>
-                                        <div class="progress-4-title-4">
-                                            <div class="block-background3">
-                                                <p>
-                                                    19%
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="progress-block-5">
-                                        <div class="progress-5-title-1">
-                                            <p>
-                                                4
-                                            </p>
-                                        </div>
-                                        <div class="progress-5-title-2">
-                                            <p>
-                                                Outdoor Temp
-                                            </p>
-                                        </div>
-                                        <div class="progress-5-title-3">
-                                            <div class="wrapper4">
-                                                <div class="progress">
-                                                    <div class="progress__line-bg4">
-                                                        <div class="progress__line4" id="progress__line4"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <script>
-                                                function Progress() {
-                                                    let elem = document.getElementById('progress__line4'),
-                                                        width = 1,
-                                                        id = setInterval(progressStatus, 13);
-                                                    function progressStatus() {
-                                                        if (width >= 40) {
-                                                            clearInterval(id);
-                                                        } else {
-                                                            width++;
-                                                            elem.style.width = width + '%';
-                                                            elem.innerHTML = width * '0';
-                                                        }
-                                                    }
-                                                }
-                                                Progress();
-                                            </script>
-                                        </div>
-                                        <div class="progress-5-title-4">
-                                            <div class="block-background4">
-                                                <p>
-                                                    29%
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="posp">
-
-                            </div>
-                        </div>
-                        <div class="main-info-site3">
-                            <div class="tpc">
-
-                            </div>
-                            <div class="spe">
-                                <div class="title-for-spe">
-                                    <p>
-                                        Solar Panel Efficiency (W)
-                                    </p>
-                                    <div class="name-device">
-                                        <p>
-                                            Device 1
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="graphs-for-spe">
-                                    <div id="chart" style="width: 600px; height: 200px;"></div>
-                                    <script>
-                                        // Override the legend symbol creator function
-                                        Highcharts.wrap(Highcharts.Series.prototype, 'drawLegendSymbol', function (proceed, legend) {
-                                            proceed.call(this, legend);
-
-                                            this.legendLine.attr({
-                                                d: ['M', 0, 0, 'L', 0, 0, 0, 0]
-                                            });
-                                            this.negativeLine = this.chart.renderer.path(
-                                                ['M', 0, 0, 'L', 0, 0, 0, 0]
-                                            ).attr({
-                                                stroke: this.options.negativeColor,
-                                                'stroke-width': this.options.lineWidth
-                                            })
-                                                .add(this.legendGroup);
-                                        });
-                                        Highcharts.chart('chart', {
-
-                                            xAxis: {
-                                                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                                                title: {
-                                                    text: '',
-                                                }
-                                            },
-                                            yAxis: {
-                                                title: { text: '' },
-                                            },
-                                            chart: {
-                                                backgroundColor: '#21222D',
-                                                type: 'line'
-                                            },
-                                            credits: {
-                                                enabled: false
-                                            },
-                                            title: {
-                                                text: '',
-                                            },
-                                            marker: {
-                                                enabled: false
-                                            },
-                                            series: [{
-                                                data: [1, 3, 7, 2, 5, 30, 1, 3, 7, 2, 5, 30],
-                                                marker: {
-                                                    enabled: false
-                                                }
-                                            }]
-                                        });
-                                    </script>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="span">
-
-                        </div>
+                </div>
+                <div class="line_item">
+                    <img src="./img/Index/CPU.png" alt="" class="line_item_image">
+                    <div class="lineItemText">
+                        <div class="line_item_text_title">Integration of Different Platforms</div>
+                        <div class="line_item_text_contant">You can create on any platform you<br> like, AVR or ARM and
+                            easily connect<br> to our service</div>
+                    </div>
+                </div>
+                <div class="line_item">
+                    <img src="./img/Index/clock.png" alt="" class="line_item_image">
+                    <div class="lineItemText">
+                        <div class="line_item_text_title">Timers... Timers...</div>
+                        <div class="line_item_text_contant">For timer projects, you need<br> more cool stuff! We
+                            have<br> them!</div>
                     </div>
                 </div>
             </div>
-    </section>
-    <script src="https://kit.fontawesome.com/1592104223.js" crossorigin="anonymous"></script>
+            <div class="secondLine">
+                <div class="line_item">
+                    <img src="./img/Index/Storm_fill.png" alt="" class="line_item_image">
+                    <div class="lineItemText">
+                        <div class="line_item_text_title">Weather indicators - the main component<br> of the project
+                        </div>
+                        <div class="line_item_text_contant">We know the importance of these<br> indicators and have
+                            already made sure<br> that it is convenient for you to manage<br> them!</div>
+                    </div>
+                </div>
+                <div class="line_item">
+                    <img src="./img/Index/Line_up.png" alt="" class="line_item_image">
+                    <div class="lineItemText">
+                        <div class="line_item_text_title">Monitoring is important</div>
+                        <div class="line_item_text_contant">You can monitor the indicators you<br> need, it's easy to
+                            set up!</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="infoBlock">
+            <div class="infoBlock_1">
+                <div class="infoBlock_text">
+                    <div class="infoBlock_title">Do you need a ready-made devace for yout IoT project?</div>
+                    <div class="infoBlock_content">
+                        We have a bunch of boards for various IoT projects that you might need!
+                        On different platforms, at different prices, and most importantly, convenient!
+                        It doesn't matter whether it's ST 32 or Arduino! We already have all the preparations </div>
+                </div>
+                <div class="infoBlock_image">
+                    <img src="./img/Index/image 3.png" alt="" class="infoBlock_image_">
+                </div>
+            </div>
+            <div class="infoBlock_2">
+                <div class="infoBlock_image">
+                    <img src="./img/Index/image 4.png" alt="" class="infoBlock_image_">
+                </div>
+                <div class="infoBlock_text">
+                    <div class="infoBlock_title">Do you need a ready-made devace for yout IoT project?</div>
+                    <div class="infoBlock_content">
+                        We have a bunch of boards for various IoT projects that you might need!
+                        On different platforms, at different prices, and most importantly, convenient!
+                        It doesn't matter whether it's ST 32 or Arduino! We already have all the preparations
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerTitle">A platform for building fast and<br>reliable IoT systems</div>
+        <div class="footerInfoBlock">
+            <div class="footer_info_col">
+                <div class="footer_info_col_title">Use Cases</div>
+                <div class="footer_info_col_menu">
+                    <div class="footer_info_col_item">IoT progect</div>
+                    <div class="footer_info_col_item">Automation</div>
+                    <div class="footer_info_col_item">Monitoring</div>
+                </div>
+            </div>
+            <div class="footer_info_col">
+                <div class="footer_info_col_title">Company</div>
+                <div class="footer_info_col_menu">
+                    <div class="footer_info_col_item">About</div>
+                    <div class="footer_info_col_item">Samples</div>
+                    <div class="footer_info_col_item">Contact</div>
+                </div>
+            </div>
+            <div class="footer_info_col">
+                <div class="footer_info_col_title">Contact us</div>
+                <div class="footer_info_col_menu">
+                    <div class="footer_info_col_item">Instagram</div>
+                    <div class="footer_info_col_item">Facebook</div>
+                    <div class="footer_info_col_item">Email</div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
